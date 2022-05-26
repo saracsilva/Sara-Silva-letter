@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  color: #241042;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+body {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  padding: 0 1.5rem;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+h1 {
+  font-size: 70px;
+  margin: 20px 50px;
+}
+.container {
+  width: inherit;
+  max-width: 60%;
+  height: inherit;
+  max-height: 80%;
+  padding: 7rem 7rem 2rem 7rem;
+  background: linear-gradient(25deg, #ee9ca7 0%, #ffdde1 100%);
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  overflow: auto;
+}
+.text {
+  padding: 20px;
+  position: inherit;
+}
+.newAdventures {
+  background-color: #e5fd91;
+  display: inline-block;
+  line-height: 25px;
+}
+.presentation {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110%;
+  margin: 20px 50px;
+  width: 50%;
+  position: relative;
+}
+.theLetter {
+  margin: 20px 50px;
+  width: 80%;
+}
+
+.image {
+  width: 100%;
+  float: right;
+  position: relative;
+  height: auto;
+}
+.image .animation {
+  max-width: 100%;
+  width: auto;
+  height: inherit;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  float: right;
+  position: relative;
+}
+.gif {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1068px) {
+  .container {
+    max-width: auto;
+  }
+  .image {
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
+  .text {
+    max-width: auto;
+  }
+}
+@media screen and (max-width: 868px) {
+  .container {
+    max-width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .image {
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
+  .text {
+    max-width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+  }
+  .image {
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
+  .text {
+    padding: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+  }
+}
